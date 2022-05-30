@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style type"text/css">
+         .container-img{
+             position:relative;
+             width:600px;
+         }
+         .image{
+             display:block;
+             width:600px;
+             height:400px;
+             transition:1s;
+         }
+         .overlay{
+             position:absolute;
+             top:0;
+             bottom:0;
+             left:0;
+             right:0;
+             height:100%;
+             opacity:0;
+             transition:1s;
+             background-color: rgba(209, 23, 23, 0.767);
+         }
+         .container-img:hover .overlay{
+             opacity:1;
+         }
+         .container-img:hover .image{
+             transform: rotate(360deg);
+         }
+         .text {
+             color: rgb(34, 0, 255);
+             font-size: 30px;
+             position:absolute;
+             top:50%;
+             left:50%;
+             -webkit-transform:translate(-50%,-50%);
+             -ms-transform:translate(-50%,-50%);
+             -o-transform:translate(-50%,-50%);
+             -moz-transform:translate(-50%,-50%);
+             transform:translate(-50%,-50%);
+             text-align:center;
+         }
+         </style>
+    </head>
+</html>
+<body>
+    <h2>image overlay effect</h2>
+    <div class="container-img">
+        <img src="C:\Users\DELL\Desktop\Nissan Skyline Gt R R34.jpg" alt="R34" class="image">
+    <div class="overlay">
+        <div class="text">R34</div>
+    </div>
+    </div>
+    </body>
+    </html>    
